@@ -1,15 +1,18 @@
 import { Outlet, useNavigate } from "react-router";
 
-const navigate = useNavigate();
 
-const handleClickList = () => {
-    navigate({pathname:'list'})
-}
-const handleClickAdd = () => {
-    navigate({pathname:'add'})
-}
 
 function IndexPage() {
+
+    const navigate = useNavigate();
+
+    const handleClickList = () => {
+        navigate({pathname:'list'})
+    }
+    const handleClickAdd = () => {
+        navigate({pathname:'add'})
+    }
+
     return (
         <div>
             <div className="w-full flex m-2 p-2">
